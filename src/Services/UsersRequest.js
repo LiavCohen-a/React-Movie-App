@@ -1,16 +1,8 @@
 // Imports
 import fireBase from '../FireBase/connection/fireBase';
 
-
-
 // Variables
 let collection = "Users";
-const userData = {
-    FirstName : "Liav",
-    LastName : "cohen",
-    CreatedDate : "" ,
-    SessionTimeOut : 60,
-  }
 
 // Functions
 

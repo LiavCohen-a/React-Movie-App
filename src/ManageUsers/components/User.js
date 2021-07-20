@@ -1,7 +1,5 @@
 // Modules
-import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
-import { connect } from "react-redux";
 import { useEffect, useState } from "react";
 import PermissionsRequest from "../../Services/PermissionsRequest";
 
@@ -26,9 +24,6 @@ const useStyles = makeStyles({
     marginBottom: 12,
   },
 });
-
-//Components
-
 
 
 function UserComp(props) {

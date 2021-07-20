@@ -21,7 +21,6 @@ function UpdateDetailsComp() {
         }
     }
 
-
   return (
     <div>
       
@@ -30,7 +29,6 @@ function UpdateDetailsComp() {
       User Name : <input type="text" onChange={e => setUserName(e.target.value) } /> <br/>
 
       <input type="button" value="Submit" onClick={() => setDetails() } /> <br/>
-
 
     </div>
   );

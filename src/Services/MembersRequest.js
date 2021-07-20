@@ -1,11 +1,9 @@
 // Imports
 import fireBase from '../FireBase/connection/fireBase';
 
-
-
 // Variables
-
 let collection = "Members";
+
 // Functions
 
 let getMembers =async () => {

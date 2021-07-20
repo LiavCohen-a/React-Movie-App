@@ -1,14 +1,10 @@
 // Modules
-import { Link } from 'react-router-dom';
-import { useHistory } from "react-router-dom";
-import {connect} from "react-redux";
 import { useEffect, useState } from 'react';
 import UsersRequest from '../../Services/UsersRequest';
 //Components
 import UserComp from '../components/User';
 
 import '../usersCss.css'
-
 
 function AllUsersPage(props) {
   
@@ -21,7 +17,6 @@ function AllUsersPage(props) {
     }
     getData();
   }, [])
-
 
   let deleteUser =async (id) => {
     let response = await UsersRequest.deleteUser(id)

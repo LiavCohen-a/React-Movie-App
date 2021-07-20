@@ -1,6 +1,5 @@
 // Modules
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import  MoviesRequest from "../../Services/MoviesRequest";
 import { useHistory } from "react-router-dom";
 

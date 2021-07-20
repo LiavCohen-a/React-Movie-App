@@ -23,8 +23,7 @@ function UserCredentialComp(props) {
 
   return (
     <div>
-
-    
+      
       User Email : <TextField id="outlined-email-input" size="small" type="email" variant="outlined" onChange={e => setEmail(e.target.value)} /> <br/>
       Password :   <TextField id="outlined-password-input" size="small" type="password" variant="outlined" onChange={e => setPassword(e.target.value)} /> <br/>
       <Button variant="outlined" color="primary" size="small"  onClick={() => callBack()}  > 

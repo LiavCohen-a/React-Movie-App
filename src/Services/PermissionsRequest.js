@@ -1,15 +1,14 @@
 // Imports
 import fireBase from '../FireBase/connection/fireBase';
 
-
-
 // Variables
 let collection = "Permissions";
-let permissions = [];
 let userPermissions = {};
+
 // Functions
 
 let getAllPermissions =async () => {
+    let permissions = [];
     let data = await fireBase.firestore().collection(collection).get()
     data.forEach(per =>{
         if(per.id == "JkmB43lA3F724OPBjNXI" )
@@ -24,6 +23,7 @@ let getAllPermissions =async () => {
 }
 
 let getUserPermissions =async (id) => {
+
     let data = await fireBase.firestore().collection(collection).get()
     
     data.forEach(per =>{

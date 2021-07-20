@@ -1,6 +1,5 @@
 // Modules
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import  MembersRequest from "../../Services/MembersRequest";
 import { useHistory } from "react-router-dom";
 
@@ -51,7 +50,7 @@ function EditMemberPage(props) {
       <TextField margin="dense" id="outlined-search" value={name} size="small" label="Name" type="text" variant="outlined" onChange={e => setName(e.target.value)} /> <br />
       <TextField margin="dense" id="outlined-search" value={city} size="small" label="Name" type="text" variant="outlined" onChange={e => setCity(e.target.value)} /> <br />
       <TextField margin="dense" id="outlined-search" value={email} size="small" label="Name" type="text" variant="outlined" onChange={e => setEmail(e.target.value)} /> <br />
-      
+
       <Button type="submit" variant="outlined" color="primary" size="small"   > 
      Update
       </Button>
