@@ -1,0 +1,21 @@
+.Movie{
+    margin-left: 10px;
+}
+.Subscriptions{
+    border: solid black;
+    margin-bottom: 10px;
+    width: 30%;
+}
+.movieImg{
+    width: 90px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.allMovies{
+    display: flex;
+    flex-wrap: wrap;
+}
+.input{
+    margin-top: 10px;
+}

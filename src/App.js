@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+// Modules
+import {connect} from "react-redux";
 
-function App() {
+//Components
+import LinkComp from './appRoot/Link';
+import SwitchComp from './appRoot/Switch';
+
+function App(props) {
+  let name;
+  let links;
+  if(props.data)
+  {
+    name = <span> {props.data.userName} </span>
+    links = <div> <LinkComp /> </div>
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Movies - Subscriptions Web Site  {name} </h1>
+
+      {links}
+      
+     <SwitchComp/>
+      
     </div>
   );
 }
+const mapStateToProps = ( state ) =>{
+  return { data : state}
+}
 
-export default App;
+export default connect(mapStateToProps)(App);;

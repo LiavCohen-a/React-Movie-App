@@ -1,0 +1,9 @@
+.Member{
+    width: 40%;
+    margin: 5px;
+}
+
+.allMembers{
+    display:flex;
+    flex-wrap: wrap;
+}
