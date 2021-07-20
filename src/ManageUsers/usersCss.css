@@ -1,0 +1,8 @@
+
+.allUsers{
+    display: flex;
+    flex-wrap: wrap;
+}
+.user{
+    margin : 10px;
+}
