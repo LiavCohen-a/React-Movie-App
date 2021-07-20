@@ -1,6 +1,5 @@
 // Modules
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import '../moviesCss.css';
 import SubscriptionRequest from "../../Services/SubscriptionRequest";
 import { useHistory } from "react-router-dom";

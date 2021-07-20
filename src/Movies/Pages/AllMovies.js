@@ -1,6 +1,5 @@
 // Modules
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import  MoviesRequest from "../../Services/MoviesRequest";
 
 //Css
@@ -12,7 +11,6 @@ import  MovieComp from "../components/MovieComp";
 function AllMoviesPage(props) {
 
   const [movies,setMovies] = useState([]);
-  const [sub,setSubs] = useState([]);
 
   useEffect(() => {
     async function getData()
@@ -41,8 +39,6 @@ function AllMoviesPage(props) {
       
     }
     </div>
- 
-
     </div>
   );
 }

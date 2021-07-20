@@ -1,6 +1,4 @@
 // Modules
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 //Components
 import SubsSwitch from './root/Switch';

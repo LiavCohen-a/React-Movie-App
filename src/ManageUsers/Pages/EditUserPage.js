@@ -1,10 +1,8 @@
 // Modules
-import { Link } from 'react-router-dom';
 import UsersRequest from '../../Services/UsersRequest';
 import PermissionsRequest from '../../Services/PermissionsRequest';
 import { useEffect, useState } from 'react';
 import { useHistory } from "react-router-dom";
-import {connect} from "react-redux";
 
 //Css
 import TextField from '@material-ui/core/TextField';

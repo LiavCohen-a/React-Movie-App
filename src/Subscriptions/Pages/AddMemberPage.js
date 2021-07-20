@@ -1,6 +1,5 @@
 // Modules
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import  MembersRequest from "../../Services/MembersRequest";
 import { useHistory } from "react-router-dom";
 
@@ -48,7 +47,7 @@ function AddMemberPage(props) {
       
       <h3> Add New Member </h3>
       <form onSubmit={e => setNewMember(e) } >
-        
+
       <TextField margin="dense" id="outlined-search" size="small" label="Name" type="text" variant="outlined" onChange={e => setName(e.target.value)} /> <br />
       <TextField margin="dense" id="outlined-search" size="small" label="Name" type="text" variant="outlined" onChange={e => setCity(e.target.value)} /> <br />
       <TextField margin="dense" id="outlined-search" size="small" label="Name" type="text" variant="outlined" onChange={e => setEmail(e.target.value)} /> <br />

@@ -2,11 +2,9 @@
 import fireBase from '../FireBase/connection/fireBase';
 import SubscriptionRequest from './SubscriptionRequest';
 
-
-
 // Variables
-
 let collection = "Movies";
+
 // Functions
 
 let getMovies =async () => {

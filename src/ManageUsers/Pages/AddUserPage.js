@@ -1,8 +1,6 @@
 // Modules
-import { Link } from 'react-router-dom';
 import { useHistory } from "react-router-dom";
-import {connect} from "react-redux";
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import UsersRequest from '../../Services/UsersRequest';
 import PermissionsRequest from '../../Services/PermissionsRequest';
 
@@ -41,7 +39,6 @@ function AddUserPage(props) {
     history.push('/UserManagement/AllUsers')
   }
   
-  
   return (
     <div> 
       <h5> ManageUsersPage </h5>
@@ -59,7 +56,6 @@ function AddUserPage(props) {
         <Button type="button" variant="outlined" color="primary" size="small" onClick={() => history.push("/UserManagement/AllUsers")}  > 
           Cancel
         </Button>
-
       </form>
     </div>
   );
