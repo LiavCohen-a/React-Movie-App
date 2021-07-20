@@ -3,6 +3,11 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import  MembersRequest from "../../Services/MembersRequest";
 import { useHistory } from "react-router-dom";
+
+//Css
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+
 //Components
 
 function EditMemberPage(props) {
@@ -43,12 +48,18 @@ function EditMemberPage(props) {
       
       <h3> Edit Members : {member.Name} </h3>
       <form onSubmit={e => updateMember(e) } >
-      Name : <input type="text" value={name} onChange={e => setName(e.target.value)} /> <br/>
-      City :<input type="text" value={city} onChange={e => setCity(e.target.value)} /> <br/>
-      Email : <input type="text" value={email} onChange={e => setEmail(e.target.value)} /> <br/>
-
-      <input type="submit" value="Update" /> &nbsp;   <input type="button" value="Cancel" onClick={() => history.push("/Subscriptions/AllMembers")} />
-    
+      <TextField margin="dense" id="outlined-search" value={name} size="small" label="Name" type="text" variant="outlined" onChange={e => setName(e.target.value)} /> <br />
+      <TextField margin="dense" id="outlined-search" value={city} size="small" label="Name" type="text" variant="outlined" onChange={e => setCity(e.target.value)} /> <br />
+      <TextField margin="dense" id="outlined-search" value={email} size="small" label="Name" type="text" variant="outlined" onChange={e => setEmail(e.target.value)} /> <br />
+      
+      <Button type="submit" variant="outlined" color="primary" size="small"   > 
+     Update
+      </Button>
+      &nbsp;
+      <Button type="button" variant="outlined" color="primary" size="small" onClick={() => history.push("/Subscriptions/AllMembers")}  > 
+      Cancel
+      </Button>
+  
       </form>
     </div>
   );
